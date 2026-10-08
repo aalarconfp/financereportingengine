@@ -1,0 +1,14 @@
+{
+ "_note": "SYNTHETIC example of donuts_<YYYY_MM>.json (MoneyPro month-close donuts, values ACCUMULATED to End Period). Not real data.",
+ "source": "Money Pro - <Mes> <Año>.docx",
+ "donuts": {
+  "Income": {"end": "2030-01-31", "start": "2018-01-01", "total": 1500.00,
+             "items": {"Active Income": 1000.00, "Investment and Assets": 300.00, "Passive Income": 200.00}},
+  "Expenses": {"end": "2030-01-31", "start": "2018-01-01", "total": 900.00,
+               "items": {"To Savings": 400.00, "Daily Living": 300.00, "Food": 200.00}},
+  "Other Assets": {"end": "2030-01-31", "total": 750.00,
+                   "items": {"Example Broker A": 500.00, "Example Equipment": 250.00, "Example Fund (closed)": 0}},
+  "Assets": {"end": null, "total": 850.00,
+             "items": {"Other Assets": 750.00, "Payment Accounts": 100.00}}
+ }
+}

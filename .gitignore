@@ -1,0 +1,87 @@
+# =============================================================================
+# Personal Finance Monthly Reporting Engine — .gitignore
+# Strategy: ALLOWLIST. Everything at the repository root is ignored by default;
+# only explicitly listed code/documentation is versioned. New data files are
+# therefore excluded automatically (SECURITY > CONVENIENCE).
+# =============================================================================
+
+# 1) Deny everything at the root by default
+/*
+
+# 2) Allow code, configuration templates and documentation (explicit list)
+!/.gitignore
+!/.gitattributes
+!/.env.example
+!/CLAUDE.md
+!/README.md
+!/requirements.txt
+!/engine.py
+!/rlib.py
+!/charts.py
+!/powerbi_rest_client.py
+!/dax_queries.md
+!/pipeline/
+!/docs/
+!/examples/
+!/scripts/
+!/.claude/
+
+# 3) Never version JSON by default (results may contain financial data).
+#    Only sanitized examples and the Claude Code project settings are allowed.
+*.json
+!/examples/*.example.json
+!/.claude/settings.json
+
+# 4) Secrets and local configuration — never
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+.azure/
+.claude/settings.local.json
+
+# 5) Personal financial data and exports — never (even inside allowed folders)
+*.csv
+*.tsv
+*.xlsx
+*.xlsm
+*.xls
+*.docx
+*.doc
+*.pdf
+*.pbix
+*.pbit
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.zip
+*.skill
+*.md.bak
+
+# 6) Generated artefacts and run outputs — never
+work/
+regression/
+output/
+outputs/
+__pycache__/
+*.py[cod]
+*.log
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# 7) OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+~$*
+.vscode/
+.idea/

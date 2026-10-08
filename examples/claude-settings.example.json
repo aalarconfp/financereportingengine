@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "deny": [
+      "Bash(git push:*)",
+      "Bash(git remote add:*)",
+      "Bash(git remote set-url:*)",
+      "Bash(gh repo create:*)",
+      "Bash(gh repo edit:*)",
+      "Bash(az login:*)",
+      "Bash(az account get-access-token:*)",
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Edit(./.env)",
+      "Read(../Transacciones Money Pro/**)",
+      "Read(../Historic Reports/**)"
+    ],
+    "ask": [
+      "Bash(git commit:*)",
+      "Bash(git add:*)",
+      "Bash(git reset:*)",
+      "Bash(git rebase:*)",
+      "Bash(python pipeline/dax_bridge.py run:*)",
+      "Read(./regression/**)",
+      "Read(./work/**)",
+      "Read(./report_data_*.json)"
+    ]
+  }
+}

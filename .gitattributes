@@ -1,0 +1,15 @@
+# Normalize line endings (repository edited from Windows)
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.txt text eol=lf
+*.ps1 text eol=crlf
+*.cmd text eol=crlf
+
+# Binary (should never be committed — see .gitignore — but declared for safety)
+*.pdf binary
+*.xlsx binary
+*.docx binary
+*.png binary
+*.pbix binary

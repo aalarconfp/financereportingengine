@@ -1,0 +1,14 @@
+# Personal Finance Monthly Reporting Engine
+# Python >= 3.10 (developed and tested with 3.13)
+#
+# Required
+requests>=2.31        # Power BI REST (executeQueries, refresh history)
+openpyxl>=3.1         # MoneyPro Control Totals workbooks
+pypdf>=4.0            # dashboard PDF merge, regression, QA
+reportlab>=4.0        # PDF report engine
+matplotlib>=3.8       # charts embedded in the report
+#
+# External (not pip):
+#   - Azure CLI (`az`) with an existing session: az login --allow-no-subscriptions
+#   - Fonts: Carlito (Linux) or Calibri (Windows, metric-compatible); REPORT_FONT_DIR to override
+#   - Optional fallback: Power BI Desktop + powerbi-modeling MCP connector (not required for REST)
